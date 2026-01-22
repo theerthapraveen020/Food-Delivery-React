@@ -1,9 +1,15 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import './Header.css'
-const Header = () => {
+
+
+const Header = ({ menuRef}) => {
+
+
+  
+
+
    const handleViewMenu = () => {
-    const menuSection = document.getElementById('explore-menu')
-    menuSection.scrollIntoView({ behavior: 'smooth' })
+    menuRef.current.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
